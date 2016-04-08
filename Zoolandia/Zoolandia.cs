@@ -1,7 +1,5 @@
 ﻿using System;
 
-using System;
-
 namespace Zoolandia
 {
 
@@ -15,11 +13,33 @@ namespace Zoolandia
     private string _food = "";
     private Species _species;
 
+    public Species species
+    {
+      get
+      {
+        return _species;
+      }
+      set
+      {
+        _species = value;
+      }
+    }
+
+
     /*
       Public property that is accessible by other classes but
       can only be read, not manipulated.
      */
-    public string name { get; set; }
+    public string name {
+      get
+      {
+        return _name;
+      }
+      set
+      {
+        _name = value;
+      }
+    }
 
     /*
       Public property that is accessible by other classes that
@@ -43,6 +63,11 @@ namespace Zoolandia
         }
       }
     }
+    
+    public Animal (string name)
+    {
+      _name = name;
+    }
 
     /*
       Your first method on a class.
@@ -55,10 +80,10 @@ namespace Zoolandia
 
   class Taxonomy
   {
-    public url { get; set; }
-    public trait { get; set; }
-    public scientificName { get; set; }
-    public commonName { get; set; }
+    public string url { get; set; }
+    public string trait { get; set; }
+    public string scientificName { get; set; }
+    public string commonName { get; set; }
   }
 
   class Genus : Taxonomy
@@ -68,7 +93,19 @@ namespace Zoolandia
 
   class Species : Taxonomy
   {
-    public Genus genus { get; set; }
+    private Genus _genus;
+
+    public Genus genus
+    {
+      get
+      {
+        return _genus;
+      }
+      set
+      {
+        _genus = value;
+      }
+    }
   }
 
 
@@ -98,6 +135,8 @@ namespace Zoolandia
     {
       this.url = "https://en.wikipedia.org/wiki/Tenodera";
       this.trait = "apical spine";
+      this.commonName = "Mantis";
+      this.scientificName = "Tenodera";
     }
 
     public Tenodera () {
@@ -117,9 +156,9 @@ namespace Zoolandia
   {
     public TenoderaSinensis ()
     {
-      this.continent = "Asia";
-      this.scientificName = "Tenodera sinensis";
-      this.commonName = "Chinese Mantis";
+        this.genus = new Tenodera("Asia");
+        this.scientificName = "Tenodera sinensis";
+        this.commonName = "Chinese Mantis";
     }
   }
 
@@ -130,149 +169,21 @@ namespace Zoolandia
   {
     public TenoderaAngustipennis ()
     {
-      this.continent = "Asia";
-      this.scientificName = "Tenodera angustipennis";
-      this.commonName = "Japanese Mantis";
+        this.genus = new Tenodera("Asia");
+        this.scientificName = "Tenodera angustipennis";
+        this.commonName = "Japanese Mantis";
     }
   }
 
-
-  /*
-    Genus class
-   */
-  class Procyon : Animal
-  {
-
-  }
-
-  /*
-    Species of Procyon
-   */
-  class ProcyonLotor : Procyon
-  {
-
-  }
-
-  /*
-    Species of Procyon
-   */
-  class ProcyonCancrivorus : Procyon
-  {
-
-  }
-
-  /*
-    Species of Procyon
-   */
-  class ProcyonPygmaeus : Procyon
-  {
-
-  }
-
-  /*
-    Species of Procyon
-   */
-  class ProcyonLotorGloveralleni : Procyon
-  {
-
-  }
-
-  /*
-    Species of Procyon
-   */
-  class ProcyonLotorMinor : Procyon
-  {
-
-  }
-
-  /*
-    Genus class
-   */
-  class Python : Animal
-  {
-
-  }
-
-  /*
-    Species of Python
-   */
-  class PythonCurtus : Python
-  {
-
-  }
-
-  /*
-    Species of Python
-   */
-  class PythonBrongersmai : Python
-  {
-
-  }
-
-  /*
-    Species of Python
-   */
-  class PythonBreitensteini : Python
-  {
-
-  }
-
-  /*
-    Species of Python
-   */
-  class PythonBivittatus : Python
-  {
-
-  }
-
-  /*
-    Species of Python
-   */
-  class PythonAnchietae : Python
-  {
-
-  }
-
-  /*
-    Genus class
-   */
-  class Loligo : Animal
-  {
-
-  }
-
-  /*
-    Species of Loligo
-   */
-  class LoligoForbesii : Loligo
-  {
-
-  }
-
-  /*
-    Species of Loligo
-   */
-  class LoligoReynaudii : Loligo
-  {
-
-  }
-
-  /*
-    Species of Loligo
-   */
-  class LoligoVulgaris : Loligo
-  {
-
-  }
 
   class Zoolandia
   {
     static void Main(string[] args)
     {
       Animal firstAnimal = new Animal(args[0]);
-      firstAnimal.species = "Ostrich";
+      firstAnimal.species = new TenoderaAngustipennis();
 
-      Console.WriteLine("{0} the {1}", firstAnimal.name, firstAnimal.species);
+      Console.WriteLine("{0} the {1} in the genus {2}", firstAnimal.name, firstAnimal.species.commonName, firstAnimal.species.genus.scientificName);
     }
   }
 
