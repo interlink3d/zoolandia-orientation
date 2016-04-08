@@ -156,9 +156,10 @@ namespace Zoolandia
   {
     public TenoderaSinensis ()
     {
-        this.genus = new Tenodera("Asia");
-        this.scientificName = "Tenodera sinensis";
-        this.commonName = "Chinese Mantis";
+      this.url = "https://en.wikipedia.org/wiki/Chinese_mantis";
+      this.genus = new Tenodera("Asia");
+      this.scientificName = "Tenodera sinensis";
+      this.commonName = "Chinese Mantis";
     }
   }
 
@@ -169,9 +170,10 @@ namespace Zoolandia
   {
     public TenoderaAngustipennis ()
     {
-        this.genus = new Tenodera("Asia");
-        this.scientificName = "Tenodera angustipennis";
-        this.commonName = "Japanese Mantis";
+      this.url = "https://en.wikipedia.org/wiki/Tenodera_angustipennis";
+      this.genus = new Tenodera("Asia");
+      this.scientificName = "Tenodera angustipennis";
+      this.commonName = "Japanese Mantis";
     }
   }
 
@@ -183,7 +185,7 @@ namespace Zoolandia
       Animal firstAnimal = new Animal(args[0]);
       firstAnimal.species = new TenoderaAngustipennis();
 
-      Console.WriteLine("{0} the {1} in the genus {2}", firstAnimal.name, firstAnimal.species.commonName, firstAnimal.species.genus.scientificName);
+      Console.WriteLine("{0} the {1}", firstAnimal.name, firstAnimal.species.commonName);
     }
   }
 
