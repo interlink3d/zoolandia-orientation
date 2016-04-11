@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Zoolandia.Animals
 {
-  class Animal
+  class Animal : IAnimal
   {
     /*
       Private scoped variable that are only accessible within
       the Animal class.
      */
     private string _name = "";
-    private string _food = "";
+    private string _food = null;
     private Species _species;
 
     public Species species
@@ -41,7 +41,11 @@ namespace Zoolandia.Animals
       }
       set
       {
-        _name = value;
+        if (value != "")
+        {
+            _name = value;
+        }
+        
       }
     }
 
@@ -69,19 +73,35 @@ namespace Zoolandia.Animals
       }
     }
 
-    public Animal(string name)
+
+    public void eat()
     {
-      _name = name;
+        if (_food == null)
+        {
+            Console.WriteLine("No food provided yet");
+        }
     }
 
-    /*
-      Your first method on a class.
-     */
-    public virtual void eat(string food)
+        public virtual void eat(string food)
     {
-      _food = food;
-      Console.WriteLine("Currently eating {0}", food);
+        _food = food;
+        Console.WriteLine("Currently eating {0}", food);
     }
+
+    public virtual void sleep()
+    {
+        throw new NotImplementedException();
+    }
+
+    public virtual void move()
+    {
+        throw new NotImplementedException();
+    }
+
+    public virtual void reproduce()
+    {
+        throw new NotImplementedException();
+    }
+
   }
-
 }

@@ -43,14 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="animals\Animal.cs" />
-    <Compile Include="animals\Genus.cs" />
+    <Compile Include="Animals\Animal.cs" />
+    <Compile Include="Animals\Species\Genus.cs" />
+    <Compile Include="Animals\Interfaces\IAmbulatory.cs" />
+    <Compile Include="Animals\Interfaces\IAnimal.cs" />
+    <Compile Include="Animals\Interfaces\IFlying.cs" />
+    <Compile Include="Animals\FlyingSquirrel.cs" />
     <Compile Include="Habitat.cs" />
-    <Compile Include="animals\Species.cs" />
-    <Compile Include="animals\TaxonomyTerm.cs" />
-    <Compile Include="animals\Tenodera.cs" />
-    <Compile Include="animals\TenoderaAngustipennis.cs" />
-    <Compile Include="animals\TenoderaSinensis.cs" />
+    <Compile Include="Animals\Species\Species.cs" />
+    <Compile Include="Animals\Species\TaxonomyTerm.cs" />
+    <Compile Include="Animals\Species\Tenodera.cs" />
+    <Compile Include="Animals\Species\TenoderaAngustipennis.cs" />
+    <Compile Include="Animals\Species\TenoderaSinensis.cs" />
+    <Compile Include="Animals\Mantis.cs" />
     <Compile Include="Zoolandia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
