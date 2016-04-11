@@ -43,7 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="animals\Animal.cs" />
+    <Compile Include="animals\Genus.cs" />
     <Compile Include="Habitat.cs" />
+    <Compile Include="animals\Species.cs" />
+    <Compile Include="animals\TaxonomyTerm.cs" />
+    <Compile Include="animals\Tenodera.cs" />
+    <Compile Include="animals\TenoderaAngustipennis.cs" />
+    <Compile Include="animals\TenoderaSinensis.cs" />
     <Compile Include="Zoolandia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
