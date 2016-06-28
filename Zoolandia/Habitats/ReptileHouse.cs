@@ -4,10 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zoolandia
+namespace Zoolandia.Habitats
 {
-  class Savanna : Habitat, IMoveable
+  class ReptileHouse : Habitat, IMoveable
   {
+    public string currentLocation
+    {
+      get
+      {
+        throw new NotImplementedException();
+      }
+
+      set
+      {
+        throw new NotImplementedException();
+      }
+    }
+
     public string destination
     {
       get

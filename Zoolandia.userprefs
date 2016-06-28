@@ -1,0 +1,37 @@
+﻿<Properties StartupItem="Zoolandia/Zoolandia.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Zoolandia/Zoolandia.cs">
+    <Files>
+      <File FileName="Zoolandia/Buildings/Zoo.cs" Line="22" Column="1" />
+      <File FileName="Zoolandia/Habitats/Aquarium.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Habitats/Pool.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Habitats/Habitat.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Habitats/ReptileHouse.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Habitats/Savanna.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Habitats/Interfaces/IAquatic.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Habitats/Interfaces/IMoveable.cs" Line="1" Column="1" />
+      <File FileName="Zoolandia/Zoolandia.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Zoolandia" expanded="True">
+            <Node name="Zoolandia" expanded="True">
+              <Node name="Buildings" expanded="True" />
+              <Node name="Zoolandia.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="Zoolandia" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

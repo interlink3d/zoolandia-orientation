@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zoolandia
+namespace Zoolandia.Habitats
 {
-  class Pool : Habitat, IAquatic
+  class Aquarium : Habitat, IAquatic
   {
     public string filterType
     {

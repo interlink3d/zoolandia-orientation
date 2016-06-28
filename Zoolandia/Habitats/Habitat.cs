@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Zoolandia.Animals;
 
-namespace Zoolandia
+namespace Zoolandia.Habitats
 {
   class Habitat
   {
