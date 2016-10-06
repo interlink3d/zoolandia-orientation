@@ -4,3 +4,4 @@ obj
 packages
 .DS_Store
 project.lock.json
+.vscode
