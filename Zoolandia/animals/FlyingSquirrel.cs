@@ -4,40 +4,18 @@ namespace Zoolandia.Animals
 {
     class FlyingSquirrel : Animal, IAmbulatory, IFlying
     {
-        public double airSpeed
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public double airSpeed { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double groundSpeed
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public double groundSpeed { get; set; }
 
         public void fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.name} jumps out of a tree and glides at {this.airSpeed} m/s.");
         }
 
         public void walk()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.name} bounds along the ground at {this.groundSpeed} m/s.");
         }
     }
 }

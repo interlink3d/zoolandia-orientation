@@ -37,6 +37,8 @@ namespace Zoolandia
       FlyingSquirrel scrat = new FlyingSquirrel();
       scrat.name = "Scrat";
       scrat.species = new Pteromyini();
+      scrat.airSpeed = 4;
+      scrat.fly();
 
       // Add the sample animals to the savanna habitat
       savanna.inhabitants.Add(manny);
