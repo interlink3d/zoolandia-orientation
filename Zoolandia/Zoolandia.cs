@@ -16,7 +16,7 @@ namespace Zoolandia
       // Create an aquarium habitat
       Aquarium aquarium = new Aquarium();
 
-      // Create an pool habitat
+      // Create a pool habitat
       Pool sealPool = new Pool();
 
       // Create a snake pit habitat
@@ -36,7 +36,7 @@ namespace Zoolandia
 
       FlyingSquirrel scrat = new FlyingSquirrel();
       scrat.name = "Scrat";
-      scrat.species = new TenoderaAngustipennis();
+      scrat.species = new Pteromyini();
 
       // Add the sample animals to the savanna habitat
       savanna.inhabitants.Add(manny);
@@ -47,11 +47,9 @@ namespace Zoolandia
       // info to the console
       foreach (Animal a in savanna.inhabitants)
       {
-        Console.WriteLine("{0} the {1} in the genus {2}. To find out more visit {3}.",
-          a.name,
-          a.species.commonName,
-          a.species.genus.scientificName,
-          a.species.url);
+        Console.WriteLine($@"{a.name} the {a.species.commonName} in the genus {a.species.genus.scientificName}.
+To find out more visit {a.species.url}.
+");
       }
     }
   }

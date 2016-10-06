@@ -1,6 +1,6 @@
 ﻿namespace Zoolandia.Animals
 {
-    class TenoderaAngustipennis : Species
+  public class TenoderaAngustipennis : Species
   {
     public TenoderaAngustipennis()
     {

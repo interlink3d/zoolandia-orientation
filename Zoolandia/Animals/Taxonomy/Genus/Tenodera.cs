@@ -1,6 +1,6 @@
 ﻿namespace Zoolandia.Animals
 {
-    class Tenodera : Genus
+  public class Tenodera : Genus
   {
     private string _continent;
 

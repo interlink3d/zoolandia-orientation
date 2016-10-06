@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Zoolandia.Animals
+﻿namespace Zoolandia.Animals
 {
-  class TaxonomyTerm
+  public class TaxonomyTerm
   {
     public string url { get; set; }
     public string trait { get; set; }
