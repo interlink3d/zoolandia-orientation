@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Zoolandia.Habitats;
 
 namespace Zoolandia.Buildings
 {
-  class Zoo
+  public class Zoo
   {
     private string _name = "Zoolandia";
     

@@ -1,8 +1,9 @@
 ﻿namespace Zoolandia.Habitats
 {
-  interface IMoveable
+  public interface IMoveable
   {
     string currentLocation { get; set; }
     string destination { get; set; }
+    void move(string destination);
   }
 }

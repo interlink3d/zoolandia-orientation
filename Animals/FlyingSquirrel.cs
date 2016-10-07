@@ -2,7 +2,7 @@
 
 namespace Zoolandia.Animals
 {
-    class FlyingSquirrel : Animal, IAmbulatory, IFlying
+    public class FlyingSquirrel : Animal, IAmbulatory, IFlying
     {
         public double airSpeed { get; set; }
 

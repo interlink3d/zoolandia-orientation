@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Zoolandia.Animals
 {
-  class Animal : IAnimal
+  public class Animal : IAnimal
   {
     /*
       Private scoped variable that are only accessible within
@@ -14,19 +10,7 @@ namespace Zoolandia.Animals
      */
     private string _name = "";
     private string _food = null;
-    private Species _species;
-
-    public Species species
-    {
-      get
-      {
-        return _species;
-      }
-      set
-      {
-        _species = value;
-      }
-    }
+    public Species species { get; set; }
 
 
     /*
@@ -82,7 +66,7 @@ namespace Zoolandia.Animals
         }
     }
 
-        public virtual void eat(string food)
+    public virtual void eat(string food)
     {
         _food = food;
         Console.WriteLine("Currently eating {0}", food);

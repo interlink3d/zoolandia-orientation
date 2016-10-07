@@ -1,37 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Zoolandia.Habitats
+﻿namespace Zoolandia.Habitats
 {
-  class ReptileHouse : Habitat, IMoveable
+  public class ReptileHouse : Habitat, IMoveable
   {
-    public string currentLocation
-    {
-      get
-      {
-        throw new NotImplementedException();
-      }
+    public string currentLocation { get; set; }
 
-      set
-      {
-        throw new NotImplementedException();
-      }
+    public string destination { get; set; }
+
+    public void move(string destination)
+    {
+      this.destination = destination;
     }
-
-    public string destination
+    public ReptileHouse(string location)
     {
-      get
-      {
-        throw new NotImplementedException();
-      }
-
-      set
-      {
-        throw new NotImplementedException();
-      }
+      this.currentLocation = location;
+    }
+    public ReptileHouse()
+    {
     }
   }
 }

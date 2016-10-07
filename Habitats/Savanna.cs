@@ -2,32 +2,15 @@
 
 namespace Zoolandia.Habitats
 {
-    class Savanna : Habitat, IMoveable
+  public class Savanna : Habitat, IMoveable
   {
-        public string currentLocation
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+    public string currentLocation { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+    public string destination { get; set; }
 
-        public string destination
+    public void move(string destination)
     {
-      get
-      {
-        throw new NotImplementedException();
-      }
-
-      set
-      {
-        throw new NotImplementedException();
-      }
+      this.destination = destination;
     }
   }
 }

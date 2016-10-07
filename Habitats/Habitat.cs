@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Zoolandia.Animals;
 
 namespace Zoolandia.Habitats
 {
-  class Habitat
+  public class Habitat
   {
     public bool hasWalls;
     public bool outside;
@@ -18,6 +15,7 @@ namespace Zoolandia.Habitats
     public double depth;
     public double height;
     public int windowCount;
+    public string name;
 
     public List<Animal> inhabitants;
     public List<Decoration> decorations { get; set; }

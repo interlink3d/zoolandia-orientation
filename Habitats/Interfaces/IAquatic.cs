@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Zoolandia.Habitats
+﻿namespace Zoolandia.Habitats
 {
-  interface IAquatic
+  public interface IAquatic
   {
     bool isFreshwater { get; set; }
     double waterTemperature { get; set; }
